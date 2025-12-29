@@ -4,94 +4,144 @@
   <meta charset="UTF-8">
   <title>Top Universities | Vidyarthi Mitra</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- MAIN CSS -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter&display=swap" rel="stylesheet">
+
   <style>
-    .university-page{
-      padding:60px 24px;
-      background:#f5f7fb;
+    /* PAGE ONLY STYLES */
+    .university-page {
+      padding: 60px 24px;
+      background: #f5f7fb;
+      min-height: 100vh;
     }
 
-    .university-title{
-      background:#f97316;
-      color:white;
-      text-align:center;
-      padding:20px;
-      font-family:Poppins;
-      font-size:24px;
-      margin-bottom:30px;
+    .page-title {
+      max-width: 1200px;
+      margin: auto;
+      background: #f97316;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 24px;
+      margin-bottom: 40px;
     }
 
-    .university-list{
-      max-width:1100px;
-      margin:auto;
+    .university-dashboard {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
     }
 
-    .university-card{
-      background:white;
-      border-radius:8px;
-      box-shadow:0 2px 10px rgba(0,0,0,.1);
-      padding:14px;
-      margin-bottom:16px;
-      display:flex;
-      align-items:center;
-      gap:14px;
+    .university-card {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transition: 0.3s;
     }
 
-    .university-card img{
-      width:48px;
-      height:48px;
-      object-fit:contain;
+    .university-card:hover {
+      transform: translateY(-6px);
     }
 
-    .university-card h4{
-      font-size:14px;
-      margin-bottom:4px;
+    .university-card h3 {
+      font-family: Poppins;
+      font-size: 18px;
+      color: #f97316;
+      margin-bottom: 8px;
     }
 
-    .university-card span{
-      font-size:12px;
-      color:#6b7280;
+    .university-card p {
+      font-size: 14px;
+      color: #374151;
+      margin-bottom: 6px;
+    }
+
+    .university-card span {
+      font-size: 13px;
+      color: #6b7280;
     }
   </style>
 </head>
 
 <body>
 
-<div class="university-page">
+<!-- HEADER (SAME STYLE AS HOME) -->
+<header class="top-header">
+  <div class="nav">
+    <div class="logo">Vidyarthi <span>Mitra</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="epaper.html">E-Paper</a>
+      <a href="university.html" class="active">Universities</a>
+      <a href="#">Institutes</a>
+      <a href="#footer">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <div class="university-title">
-    TOP UNIVERSITIES
+<!-- UNIVERSITY DASHBOARD -->
+<section class="university-page">
+
+  <div class="page-title">
+    Top Universities in India
   </div>
 
-  <div class="university-list">
+  <div class="university-dashboard">
 
     <div class="university-card">
-      <img src="assets/university/iisc.png" alt="">
-      <div>
-        <h4>Indian Institute of Science, Bangalore</h4>
-        <span>Public • Research University</span>
-      </div>
+      <h3>Indian Institute of Science (IISc)</h3>
+      <p>Bangalore, Karnataka</p>
+      <span>Public • Research University</span>
     </div>
 
     <div class="university-card">
-      <img src="assets/university/jnu.png" alt="">
-      <div>
-        <h4>Jawaharlal Nehru University</h4>
-        <span>Central University</span>
-      </div>
+      <h3>Jawaharlal Nehru University (JNU)</h3>
+      <p>New Delhi</p>
+      <span>Central University</span>
     </div>
 
     <div class="university-card">
-      <img src="assets/university/du.png" alt="">
-      <div>
-        <h4>University of Delhi</h4>
-        <span>Central University</span>
-      </div>
+      <h3>University of Delhi (DU)</h3>
+      <p>Delhi</p>
+      <span>Central University</span>
+    </div>
+
+    <div class="university-card">
+      <h3>Banaras Hindu University (BHU)</h3>
+      <p>Varanasi, Uttar Pradesh</p>
+      <span>Central University</span>
+    </div>
+
+    <div class="university-card">
+      <h3>University of Hyderabad</h3>
+      <p>Hyderabad, Telangana</p>
+      <span>Central University</span>
+    </div>
+
+    <div class="university-card">
+      <h3>Aligarh Muslim University (AMU)</h3>
+      <p>Aligarh, Uttar Pradesh</p>
+      <span>Central University</span>
     </div>
 
   </div>
-</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer id="footer" class="footer">
+  <p>© 2025 Vidyarthi Mitra. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
+

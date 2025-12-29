@@ -137,3 +137,10 @@ nav ul{list-style:none;display:flex;gap:24px}
 .footer-col ul{list-style:none}
 .footer-col ul li{margin-bottom:10px}
 .footer-col ul li:hover{color:var(--orange)}
+html {
+  scroll-behavior: smooth;
+}
+nav a.active {
+  color: #f97316;
+  font-weight: 600;
+}
